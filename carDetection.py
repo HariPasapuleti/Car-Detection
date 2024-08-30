@@ -1,12 +1,12 @@
 import cv2
 
 cascade_source = 'cars.xml'
-video_source = 'Cars moving Video.mp4'
+video_source = 'videos/cars.mp4'
 
 cap = cv2.VideoCapture(video_source)
 car_cascade = cv2.CascadeClassifier(cascade_source)
 
-# Get the frame width and height
+
 frame_width = 600
 frame_height = 400
 
@@ -39,7 +39,7 @@ while True:
     cv2.imshow('Cars Detection', img)
     out.write(img)
 
-    if cv2.waitKey(20) == ord('n'):
+    if cv2.waitKey(1) == ord('n'):
         print("Video processing interrupted by user.")
         break
 
