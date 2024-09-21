@@ -1,2 +1,2 @@
-if ret:
-#     cv2.imshow("Cars Show ", frame)
+
+frame_height = 4
