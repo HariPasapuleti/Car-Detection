@@ -14,7 +14,7 @@ frame_height = 400
 # frame = cv2.resize(frame, (600, 400))
 # if ret:
 #     cv2.imshow("Cars Show ", frame)
-fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')  
 out = cv2.VideoWriter('output.mp4', fourcc, 20.0, (frame_width, frame_height))
 
 
